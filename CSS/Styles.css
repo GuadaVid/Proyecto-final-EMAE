@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Noto+Sans:wght@200&family=Open+Sans&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+main {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.padre {
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+.margen-interno {
+    padding: 0 40px;
+}
+
+
+
+
+.header {
+    background-color:#0d0909;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.menu {
+    background-color:#eab6be;
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    align-items: center;
+    border-bottom: 1px solid black ;
+}
+.logo {
+    flex: 1 1 auto;
+    width: 20px ;
+}
+.logo img {
+    width: 100%;
+}
+
+.nav {
+    flex: 5 1 auto;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+ .nav a {
+     color:#0d0909;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-size: 11px;
+ }
+ .nav a:hover{
+     color:aliceblue;
+ }
+
+.social {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end ;
+}
+.social img {
+    width: 50px;
+}
+
+.textoprincipal {
+    background-color:#000000;
+    border-bottom: 20px solid black ;
+}
+h1 {
+    background-color: #eab6be;
+    text-align: center;
+    color: black;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+
+
+
+
+
+
+.main {
+    background-color: #0d0909;
+    width: 100%;
+    display: table;
+}
+.info1 {
+    justify-content: center;
+    width: 70%;
+    float: left;
+    padding: 0px 10px 10px 10px;
+}
+
+.info1 h2 {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+}
+.contenedor{    
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    width: 70%;
+    float: left;
+    padding: 10px 10px 10px 10px;
+
+}
+
+.img_info1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 250px;
+    padding: 10px 10px 10px 10px;
+}
+.descripcion {
+    justify-content: center;
+    width: 70%;
+    float: left;
+    padding: 10px 10px 10px 10px;
+}
+.descripcion h3 {
+    color: aliceblue;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+
+
+
+aside {
+    flex: 1 1 auto; 
+    display: flex;
+    float:inline-start;
+    width: 25%;
+    padding: 10px 10px 10px 10px #e8ae6e;
+    border: 20px solid #e8aea6 ;
+    
+
+}
+.lateral {
+    background-color: #e8aea6; 
+    flex: 1 1 auto;    
+    width: 100%;
+    text-align: center;
+
+    
+}
+.lateral img {
+    width: 200px;
+}
+
+.lateral h4{
+    font-family: 'Noto Sans', sans-serif;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.lateral h5 {
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+}
+
+
+
+
+
+.consultas {
+    width: 100%;
+    position: fixed;
+    bottom: 20px;
+}
+.consultas img{
+    width: 80px;
+}
+
+
+
+
+
+
+
+.footer {
+    background-color: #eab6be;
+    display: flex;
+    justify-content: center;
+}
+.footer p {
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+.articulos{
+    background-color: black;
+    flex: 2 1 auto;
+    width: 100%;
+    
+}
+.article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.article img {
+width: 300px;
+padding: 10px 10px 10px 10px;
+}
+
+.article h6 {
+    color: black;
+    font-size: 25px;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #e8aea6;
+    
+}
+.article p {
+    color: black;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #eab6be;
+}
+
+
+
+
+
+
+.galeria {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 3px;
+}
+.galeria .imagen {
+    width: 30%;
+    position: relative;
+    height: 200px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
+}
+.imagen img{
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #eab6bea6;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: 2s ease;
+}
+.overlay p {
+    color: aliceblue;
+    font-weight: 300;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-family: 'Open Sans', sans-serif; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.imagen:hover .overlay{
+    height: 100%;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.nosotros{
+    display: flex;
+    flex-direction: row;
+}
+
+.imagen-grupo {
+    display: flex;
+    width: 80%;
+    justify-content: center; 
+}
+.imagen-grupo img {
+    width: 700px;
+    padding: 10px 10px 10px 10px;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   border: 5px 5px 5px 5px black;
+}
+.texto1 {
+    font-family: 'Open Sans', sans-serif; 
+    color: black;
+    background-color: #eab6be;
+    width: 20%;
+    text-align: center;
+}
+.texto2{
+    font-family: 'Open Sans', sans-serif; 
+    color: black;
+    background-color: #eab6bed3;
+    width: 80%;
+}
+
+
+.comunicacion {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+.comunicacion img{
+    width: 200px;
+    align-items: center;
+}
+.telefono p {
+    color: black;
+    background-color: #eab6be;
+    text-align: center;
+    text-align: 2px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+.contenerdor-formulario {
+    display: flex;
+    align-items: center;
+    
+}
+
+.info-formulario {
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    width: 65%;
+    background-color:black;
+ 
+}
+.info-formulario h2 {
+       text-align: justify;
+}
+.info-formulario p {
+    text-align: justify;
+}
+
+
+form{
+    color: aliceblue;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.form  {
+justify-content: center;
+
+}
+
+.form-hijo {
+    justify-content: center;
+    background-color: black;
+    color: #ffffff;
+}
