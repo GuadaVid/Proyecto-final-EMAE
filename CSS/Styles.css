@@ -30,7 +30,7 @@ main {
 
 
 .header {
-    background-color:#0d0909;
+    background-color:black;
     display: flex;
     flex-flow: column nowrap;
 }
@@ -59,7 +59,7 @@ main {
 
 }
  .nav a {
-     color:#0d0909;
+     color:black;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 2px;
@@ -82,7 +82,7 @@ main {
 }
 
 .textoprincipal {
-    background-color:#000000;
+    background-color:black;
     border-bottom: 20px solid black ;
 }
 h1 {
@@ -101,7 +101,7 @@ h1 {
 
 
 .main {
-    background-color: #0d0909;
+    background-color: black;
     width: 100%;
     display: table;
 }
@@ -353,6 +353,7 @@ padding: 10px 10px 10px 10px;
     margin: auto;
     justify-content: space-around;
     flex-wrap: wrap;
+
     border: 3px;
 }
 .galeria .imagen {
@@ -394,7 +395,17 @@ padding: 10px 10px 10px 10px;
     height: 100%;
     cursor: pointer;
 }
+@media (max-width:768px){
+    .galeria .imagen {
+        width: 50%;
+    }
+}
 
+@media (max-width:576px){
+    .galeria .imagen {
+        width: 70%;
+}
+}
 
 
 
@@ -411,6 +422,7 @@ padding: 10px 10px 10px 10px;
     display: flex;
     width: 80%;
     justify-content: center; 
+    margin: auto;
 }
 .imagen-grupo img {
     width: 700px;
@@ -443,6 +455,7 @@ padding: 10px 10px 10px 10px;
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
+    margin: auto;
 }
 .comunicacion img{
     width: 200px;
@@ -456,6 +469,60 @@ padding: 10px 10px 10px 10px;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
 }
+@media (max-width:768px){
+    .social img{
+        width: 30px;
+    }
+    .logo{
+        width:30px;
+    }
+    .margen-interno {
+        padding: 20px;
+    }
+    .comunicacion{
+        flex-wrap: wrap;
+        width: 70%; 
+        justify-content: space-between;
+    }
+    .imagen-grupo{
+        width: 100%;
+        max-width:768px;
+    }
+
+}
+@media (max-width:576px){
+
+    .social{
+        flex-wrap:wrap; 
+    }
+    .social img{
+        width: 20px;
+    }
+    .logo{
+        width:30px;
+    }
+    .margen-interno {
+        padding: 10px;
+    }
+    .box1{
+        width: 80%;
+        margin: auto;
+    }
+    .comunicacion{
+        flex-wrap: wrap;
+        width: 50%; 
+        justify-content: space-between;
+    }
+    .imagen-grupo{
+        width: 100%;
+        max-width:500px;
+        margin: auto;
+    }
+ }
+
+
+
+
 
 
 
@@ -467,10 +534,11 @@ padding: 10px 10px 10px 10px;
 }
 
 .info-formulario {
-    color: #ffffff;
+    color: aliceblue;
     font-family: 'Open Sans', sans-serif;
-    width: 65%;
+    width: 60%;
     background-color:black;
+    padding: 30px;
  
 }
 .info-formulario h2 {
@@ -481,19 +549,43 @@ padding: 10px 10px 10px 10px;
 }
 
 
-form{
+.form{
     color: aliceblue;
     font-family: 'Open Sans', sans-serif;
-
-}
-
-.form  {
-justify-content: center;
+    justify-content: center;
 
 }
 
 .form-hijo {
-    justify-content: center;
     background-color: black;
     color: #ffffff;
+    width: 200%;
+
+}
+
+
+@media (max-width: 768px){
+    .contenerdor-formulario{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .info-formulario{
+        padding: 30px;
+    }
+    .form {
+        padding: 30px;
+    }
+}
+@media (max-width: 576px){
+    .contenerdor-formulario{
+    
+    }
+    .info-formulario{
+        padding: 10px;
+        padding-bottom: 30px;
+    }
+    .form {
+        padding: 10px;
+        
+    }
 }
