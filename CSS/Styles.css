@@ -573,6 +573,15 @@ padding: 10px 10px 10px 10px;
     width: 200%;
 
 }
+.margenform {
+    margin-left: 97px;
+}
+.margenformtel {
+    margin-left: 72px;
+}
+.margenformasun {
+    margin-left: 84px;
+}
 
 
 @media (max-width: 768px){
