@@ -602,9 +602,6 @@ padding: 10px 10px 10px 10px;
     }
 }
 @media (max-width: 576px){
-    .contenerdor-formulario{
-       
-    }
     .info-formulario{
         padding: 10px;
         padding-bottom: 30px;
