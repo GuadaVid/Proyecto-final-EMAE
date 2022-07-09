@@ -402,14 +402,20 @@ padding: 10px 10px 10px 10px;
 }
 @media (max-width:768px){
     .galeria .imagen {
-        width: 50%;
+        width: 48%;
+        margin: 2px;
+    }
+    .galeria {
+        width: 100%;
     }
 }
 
 @media (max-width:576px){
     .galeria .imagen {
         width: 70%;
+
 }
+
 }
 
 
