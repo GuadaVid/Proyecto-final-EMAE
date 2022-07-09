@@ -582,25 +582,33 @@ padding: 10px 10px 10px 10px;
 .margenformasun {
     margin-left: 84px;
 }
-
+.botonenviar{
+    width: 313px;
+    background-color: #df4a32;
+    color: #eab6be;
+}
 
 @media (max-width: 768px){
     .contenerdor-formulario{
         flex-wrap: wrap;
         justify-content: center;
+
     }
     .info-formulario{
-        padding: 30px;
+        padding: 20px;
     }
     .form {
         padding: 30px;
     }
 }
 @media (max-width: 576px){
-
+    .contenerdor-formulario{
+       
+    }
     .info-formulario{
         padding: 10px;
         padding-bottom: 30px;
+
     }
     .form {
         padding: 10px;
